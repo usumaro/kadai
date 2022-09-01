@@ -1,0 +1,5 @@
+SELECT 
+     CONCAT('問題:',QUESTION)
+       
+
+FROM QUESTION_TABLE;
