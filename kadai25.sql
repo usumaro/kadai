@@ -1,0 +1,5 @@
+SELECT 
+     MAX(SCORE) AS 最高得点
+       
+
+FROM RESULT_TABLE;
