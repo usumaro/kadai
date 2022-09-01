@@ -1,0 +1,5 @@
+SELECT 
+     CONCAT(QUESTION,'の回答は',ANSWER,'です。')
+       
+
+FROM QUESTION_TABLE;
