@@ -1,0 +1,5 @@
+SELECT 
+     SUM(SCORE) AS 合計得点
+       
+
+FROM RESULT_TABLE;
