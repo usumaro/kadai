@@ -1,0 +1,5 @@
+SELECT 
+     COUNT(QUESTION) AS 問題数
+       
+
+FROM QUESTION_TABLE;
