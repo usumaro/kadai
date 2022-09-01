@@ -1,0 +1,5 @@
+SELECT 
+     CONCAT(NAME,'さん')
+       
+
+FROM NAME_TABLE;
