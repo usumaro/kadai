@@ -1,0 +1,12 @@
+INSERT INTO result_table
+              (name_id,score,time,category,playdate)
+VALUES(1,20,40,'理科',CURDATE())
+
+;
+
+SELECT *
+
+FROM result_table
+
+ORDER BY  score desc
+;
