@@ -1,0 +1,33 @@
+update name_table
+set rank='C'
+
+where name_id in(
+
+select name_id 
+
+from result_table
+    
+group by name_id
+
+having AVG(score)<=10
+    
+    )
+    
+;
+
+select *
+
+from result_table
+
+where name_id in (
+
+select name_id 
+    
+from name_table
+ 
+where rank='A' AND rank= 'B'
+
+
+)
+
+;
