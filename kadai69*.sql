@@ -1,14 +1,20 @@
 UPDATE
      RESULT_TABLE
      
-SET  RESULT_TABLE.score=RESULT_TABLE.score-3
+SET  score=score-3
       
- 
-FROM 
-     RESULT_TABLE
-     JOIN
-     NAME_TABLE
-     ON  RESULT_TABLE.NAME_ID=NAME_TABLE.NAME_ID
 
 where 
-      NAME_TABLE.rank='A';
+      name_id in(
+           
+           select name_id
+           from name_table
+           where rank='A')
+          
+           
+          ;
+           
+           
+           
+           
+        
