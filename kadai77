@@ -1,0 +1,12 @@
+delete from result_table
+
+where name_id in(
+
+select name_id 
+    
+from name_table
+    
+where rank='D'
+
+
+)
