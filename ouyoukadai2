@@ -25,7 +25,7 @@ select name_id
     
 from name_table
  
-where rank='A' AND rank= 'B'
+where rank='A' OR rank= 'B'
 
 
 )
