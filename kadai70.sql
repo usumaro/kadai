@@ -1,16 +1,15 @@
-UPDATE
-     RESULT_TABLE
+UPDATE name_table
 
-SET  NAME_TABLE.rank="C"
+set rank='A'
 
 
-FROM 
-     RESULT_TABLE
-     INNER JOIN
-     NAME_TABLE
-     ON  RESULT_TABLE.NAME_ID=NAME_TABLE.NAME_ID
+where
 
-where 
-     RESULT_TABLE.playdate>='2022-04-01'
-     AND RESULT_TABLE.playdate<='20220-04-30'
-     AND AVG(RESULT_TABLE.score)<=10;
+name_id in(
+
+select name_id
+from result_table
+    
+where  PLAYDATE>='2022-04-01' AND  PLAYDATE<='2022-04-30'
+
+group by name_id       
