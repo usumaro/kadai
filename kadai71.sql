@@ -3,16 +3,14 @@ UPDATE
 NAME_TABLE
 
 SET
+RANK='D'
 
-NAME_TABLE.RANK='C'
-
-FROM
-
-name_table
-JOIN
-result_table
-ON  NAME_TABLE.NAME_ID=RESULT_TABLE.NAME_ID
-
-WHERE
-(RESULT_TABLE.PLAYDATE< DATE_SUB(CURDATE(), INTERVAL 1 MONTH));
-
+where name_id in( 
+    
+select name_id
+    
+from result_table
+    
+where PLAYDATE <> DATE_SUB(CURDATE(), INTERVAL 1 month)	
+    
+group by name_id
