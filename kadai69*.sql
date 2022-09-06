@@ -1,7 +1,5 @@
 UPDATE
-     RESULT_TABLE,
-     NAME_TABLE
-     
+     RESULT_TABLE
      
 SET  RESULT_TABLE.score=RESULT_TABLE.score-3
       
