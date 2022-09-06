@@ -11,6 +11,6 @@ select name_id
     
 from result_table
     
-where PLAYDATE <> DATE_SUB(CURDATE(), INTERVAL 1 month)	
+where PLAYDATE <> DATE_SUB(CURDATE(), INTERVAL 30 day)	
     
-group by name_id
+)
