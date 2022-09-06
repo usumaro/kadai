@@ -1,0 +1,3 @@
+delete from result_table
+
+where time<=5
