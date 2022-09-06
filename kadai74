@@ -1,0 +1,3 @@
+delete from name_table
+
+where rank='D'
